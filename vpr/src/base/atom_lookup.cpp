@@ -103,7 +103,6 @@ ClusterNetId AtomLookup::clb_net(const AtomNetId net_id) const {
 }
 
 void AtomLookup::set_atom_clb_net(const AtomNetId net_id, const ClusterNetId clb_net_index) {
-    VTR_ASSERT(net_id);
     //If either are invalid remove any mapping
     if (!net_id && clb_net_index != ClusterNetId::INVALID()) {
         //Remove
